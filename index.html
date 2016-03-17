@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>генератор на тъпи заглавия</title>
+    <style>
+    
+    @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic);
+    body {
+    background: #000;
+    text-align: center;
+    }
+    h1 {
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    padding: 8px 16px;
+    border: 6px solid #f00;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 68px;
+    font-family: 'PT Sans Narrow', sans-serif; 
+    letter-spacing: -1px;
+    }
+    </style>
+</head>
+
+<body>
+
+<h1>
+    <span class="exclamation"></span>
+    <span class="person"></span>
+    <span class="action"></span>
+    <span class="item"></span>
+      <span class="place"></span>!
+ </h1>
+
+</body>
+</html>
+
+
+
+<script src="assets/javascripts/jquery-2.1.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    
+    var people = new Array("Слави", "Къци Вапцаров", "Извънземно", "Бойко Борисов", "Цветанов", "Криско", "Преслава", "Фики Стораро", "Азис", "Наследник на Сталин", "Гери Никол", "Шофьор на такси", "Волен", "Цецка Цачева", "Путин", "Руски олигарх", "Бизнесмен", "Кунева", "П.Москов");
+    var exclamation = new Array("Шок!!!", "Ужас!!!", "Скандално!!!", "Уникално!!!", "Разкритие!!!", "Гавра!", "НАГЛОСТ!", "Извънредно!!!", "Горещо!!!");
+    var item = new Array("Белене", "къща", "маса", "вила", "мезонет", "беемве", "ученички", "вила", "нож", "болонка","телефон","крака","гъз", "Ферари", "Столичен бар","щайга домати", "ваксина", "педофил", "осигуровки");
+    var action = new Array("изтипоса", "лъска","пере","открадна","бяга от", "офейка с", "повръща от","краде","задигна", "подслушва", "спи с", "опипва", "източва");
+    var place = new Array("под масата", "в парламента", "в Син Сити", "в леглото", "пред народното събрание", "в Банско", "на Черноморието", "от Гърция", "в Жълт вестник", "на Автомагистрала Тракия");
+
+    randperson = people[Math.floor( Math.random() * people.length )];
+    randexclamation = exclamation[Math.floor( Math.random() * exclamation.length )];
+    randitem = item[Math.floor( Math.random() * item.length )];
+    randaction = action[Math.floor( Math.random() * action.length )];
+    randplace = place[Math.floor( Math.random() * place.length )];
+
+    $('.exclamation').text( randexclamation );
+    $('.person').text( randperson );
+    $('.action').text( randaction );
+    $('.item').text( randitem );
+    $('.place').text( randplace );
+
+});</script>
