@@ -3,38 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>генератор на тъпи заглавия</title>
-    <style>
-    
-    @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic);
-    body {
-    background: #000;
-    text-align: center;
-    }
-    h1 {
-    display: inline-block;
-    color: #111;
-    background: #fff;
-    padding: 8px 16px;
-    border: 6px solid #f00;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 68px;
-    font-family: 'PT Sans Narrow', sans-serif; 
-    letter-spacing: -1px;
-    }
-    </style>
+    <link rel="stylesheet" href="assets/stylesheets/stylesheet.css" type="text/css" charset="utf-8" />
+    <title>Генератор на тъпи заглавия</title>
 </head>
 
 <body>
 
-<h1>
-    <span class="exclamation"></span>
-    <span class="person"></span>
-    <span class="action"></span>
-    <span class="item"></span>
-      <span class="place"></span>!
- </h1>
+<div class="container">
+    <div class="shocking-title">
+        <h1>
+            <span class="exclamation"></span>
+            <span class="person"></span>
+            <span class="action"></span>
+            <span class="item"></span>
+            <span class="place"></span>!
+        </h1>
+    </div>
+    <div class="disclaimer">
+        <iframe src="https://ghbtns.com/github-btn.html?user=akirichev&repo=title-generator&type=fork&count=true&size=small" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+    </div>
+</div>
 
 </body>
 </html>
@@ -44,7 +32,7 @@
 <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
 <script>
 $(document).ready(function() {
-    
+
     var people = new Array("Слави", "Къци Вапцаров", "Извънземно", "Бойко Борисов", "Цветанов", "Криско", "Преслава", "Фики Стораро", "Азис", "Наследник на Сталин", "Гери Никол", "Шофьор на такси", "Волен", "Цецка Цачева", "Путин", "Руски олигарх", "Бизнесмен", "Кунева", "П.Москов");
     var exclamation = new Array("Шок!!!", "Ужас!!!", "Скандално!!!", "Уникално!!!", "Разкритие!!!", "Гавра!", "НАГЛОСТ!", "Извънредно!!!", "Горещо!!!");
     var item = new Array("Белене", "къща", "маса", "вила", "мезонет", "беемве", "ученички", "вила", "нож", "болонка","телефон","крака","гъз", "Ферари", "Столичен бар","щайга домати", "ваксина", "педофил", "осигуровки");
