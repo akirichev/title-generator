@@ -14,11 +14,15 @@
 }
 
 * {
+    margin: 0;
     box-sizing: border-box;
 }
-
+html, body {
+	height: 100%;
+}
 body {
     background: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     color: #fff;
 }
@@ -42,11 +46,31 @@ h1 {
 .container {
     width: 100%;
     padding: 0 30px;
+    min-height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+    overflow: hidden;
 }
 .shocking-title {
     margin-top: 120px;
 }
+.hint {
+    font-size: 16px;
+    margin: 30px 0;
+}
 .disclaimer {
+    font-size: 12px;
+    color: #999;
     margin-top: 60px;
     font-size: 13px;
+}
+.footer-push {
+    height: 100px;
+}
+.footer {
+    height: 100px;
+    padding: 30px 0;
+    background: #222;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
 }
